@@ -11,3 +11,5 @@ This is a JavaScript project that fetches information about a country based on t
 The main event listener that is attached to the button on the web page. When the button is clicked, the function "displayCountryByGPS" is called and the data about the country is displayed on the web page.
 
 Overall, this project demonstrates the use of APIs and fetching data from them using JavaScript.
+
+For better functionality, download locally (the issue is in the free API used which has some limited features).
