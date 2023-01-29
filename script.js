@@ -63,6 +63,6 @@ const displayCountryByGPS = function (lat, lng) {
 };
 btn.addEventListener('click', function () {
 	
-	displayCountryByGPS(51.12123893503496, 20.554138062896364);
+	displayCountryByGPS(52.251430705148806, 11.901989017412681);
 	
 })
