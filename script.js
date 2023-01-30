@@ -66,3 +66,31 @@ btn.addEventListener('click', function () {
 	displayCountryByGPS(52.251430705148806, 11.901989017412681);
 	
 })
+
+// to do 
+// const DataObject = {
+//   getDataIP: async function () {
+//       const response = await fetch(`https://api.ipify.org?format=json`);
+//       const data = await response.json();
+//       return data.ip
+//   },
+//   getDataLocation: function () {
+//   	let text = 'aici va fi locatia noastra'
+//     return text;
+//   },
+// }
+
+// async function getData (dataOf) {
+//   const data = await DataObject[`get${dataOf}`]();  
+//       return data;
+  
+// }
+
+
+// async function getCountry () {
+// 	const ip = await getData('DataIP');
+//   const location =  await getData('DataLocation');
+//   console.log(`Aici avem ip-ul tau ${ip} ${location}`);
+// }
+// getCountry();
+
