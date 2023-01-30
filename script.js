@@ -42,7 +42,7 @@ const displayCountryByGPS = function (lat, lng) {
 		// console.log(data.results[0].components.country.toLowerCase());
 		let country = data.results[0].components.country.toLowerCase();
 		console.log(country);
-		  return fetch(`https://restcountries.com/v3.1/name/${country}`)
+		  return fetch(`https://countryapi.io/api/name/${country}?apikey=a28NQ13Ce5Ncd5TS13kjzGr9qZ6o6cNO6Wuskdbf`)
 			.then(response => response.json())
 			.then(response => {
 			let countryInfo = response[0];
@@ -67,36 +67,4 @@ btn.addEventListener('click', function () {
 	
 })
 
-// to do 
-// const DataObject = {
-//   async getDataIP() {
-//       const response = await fetch(`https://api.ipify.org?format=json`);
-//       const data = await response.json();
-//       return data.ip;
-//   },
-//   async getDataCoordinates() {
-//     const ip = await this.getDataIP();
-//     const response = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=031c1b2008eb43918936205b75dba5fd&ip=${ip}`);
-//     const data = await response.json();
-//     const coordonates = data;
-//     return [Number(coordonates.latitude), Number(coordonates.longitude)];
-//   },
-//   getDataLocation() {
-//     return 'aici va fi locatia noastra';
-//   },
-// };
-
-// async function getData(dataOf) {
-//   const data = await DataObject[`get${dataOf}`]();  
-//   return data;
-// }
-
-// async function getCountry() {
-//   const ip = await getData('DataIP');
-//   const coordinates = await getData('DataCoordinates');
-//   const [lat, lng] = coordinates;
-//   console.log(`Aici avem ip-ul tau ${ip} lat: ${lat} lng: ${lng}`);
-// }
-
-// getCountry();
-
+// 

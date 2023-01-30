@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../adata/downloads/Современный JavaScript - с Нуля до Junior Специалиста/Раздел 14 Асинхронный JavaScript - Promises, Async-Await, AJAX/StarterCode/img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "api"
+	}
+}
