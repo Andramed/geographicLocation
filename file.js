@@ -108,7 +108,7 @@ async function getCountryInfo(className= ' ') {
 countriesContainer.insertAdjacentHTML('beforeend', html);
 countriesContainer.style.opacity = 1;
 }
-getCountryInfo()
+
 
 async function getData(dataOf) {
   const data = await DataObject[`get${dataOf}`]();  
