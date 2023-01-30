@@ -69,28 +69,34 @@ btn.addEventListener('click', function () {
 
 // to do 
 // const DataObject = {
-//   getDataIP: async function () {
+//   async getDataIP() {
 //       const response = await fetch(`https://api.ipify.org?format=json`);
 //       const data = await response.json();
-//       return data.ip
+//       return data.ip;
 //   },
-//   getDataLocation: function () {
-//   	let text = 'aici va fi locatia noastra'
-//     return text;
+//   async getDataCoordinates() {
+//     const ip = await this.getDataIP();
+//     const response = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=031c1b2008eb43918936205b75dba5fd&ip=${ip}`);
+//     const data = await response.json();
+//     const coordonates = data;
+//     return [Number(coordonates.latitude), Number(coordonates.longitude)];
 //   },
-// }
+//   getDataLocation() {
+//     return 'aici va fi locatia noastra';
+//   },
+// };
 
-// async function getData (dataOf) {
+// async function getData(dataOf) {
 //   const data = await DataObject[`get${dataOf}`]();  
-//       return data;
-  
+//   return data;
 // }
 
-
-// async function getCountry () {
-// 	const ip = await getData('DataIP');
-//   const location =  await getData('DataLocation');
-//   console.log(`Aici avem ip-ul tau ${ip} ${location}`);
+// async function getCountry() {
+//   const ip = await getData('DataIP');
+//   const coordinates = await getData('DataCoordinates');
+//   const [lat, lng] = coordinates;
+//   console.log(`Aici avem ip-ul tau ${ip} lat: ${lat} lng: ${lng}`);
 // }
+
 // getCountry();
 
